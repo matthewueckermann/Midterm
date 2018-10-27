@@ -32,6 +32,10 @@ public class Cuboid extends Rectangle{
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public int compareTo(Object o) {
+		return 0;
+	}
 
 	class SortByArea implements Comparator<Cuboid>{
 
