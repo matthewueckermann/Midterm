@@ -50,14 +50,14 @@ class CuboidTest {
 		Cuboid c2 = new Cuboid(2,9,7);
 		Cuboid c3 = new Cuboid(2,5,1);
 		Cuboid c4 = new Cuboid(2,1,1);
-		ArrayList<Cuboid> listCub = new ArrayList<Cuboid>();
+		ArrayList<Cuboid> listCubiod = new ArrayList<Cuboid>();
 		Cuboid.SortByVolume sortVol = c1.new SortByVolume();
-		listCub.add(c1);
-		listCub.add(c2);
-		listCub.add(c3);
-		listCub.add(c4);
-		Collections.sort(listCub, sortVol);
-		assertTrue(listCub.get(0)==c1 && listCub.get(1)==c4 && listCub.get(2)==c3 && listCub.get(3)==c2);
+		listCubiod.add(c1);
+		listCubiod.add(c2);
+		listCubiod.add(c3);
+		listCubiod.add(c4);
+		Collections.sort(listCubiod, sortVol);
+		assertTrue(listCubiod.get(0)==c1 && listCubiod.get(1)==c4 && listCubiod.get(2)==c3 && listCubiod.get(3)==c2);
 	}
 	
 	@Test
@@ -66,14 +66,14 @@ class CuboidTest {
 		Cuboid c2 = new Cuboid(4,4,4); //96
 		Cuboid c3 = new Cuboid(1,1,1);  //SA 6
 		Cuboid c4 = new Cuboid(5,5,2); //SA 90
-		ArrayList<Cuboid> listCub = new ArrayList<Cuboid>();
+		ArrayList<Cuboid> listCubiod = new ArrayList<Cuboid>();
 		Cuboid.SortByArea sortArea = c1.new SortByArea();
-		listCub.add(c1);
-		listCub.add(c2);
-		listCub.add(c3);
-		listCub.add(c4);
-		Collections.sort(listCub, sortArea);
-		assertTrue(listCub.get(0)==c3 && listCub.get(1)==c1 && listCub.get(2)==c4 && listCub.get(3) == c2);
+		listCubiod.add(c1);
+		listCubiod.add(c2);
+		listCubiod.add(c3);
+		listCubiod.add(c4);
+		Collections.sort(listCubiod, sortArea);
+		assertTrue(listCubiod.get(0)==c3 && listCubiod.get(1)==c1 && listCubiod.get(2)==c4 && listCubiod.get(3) == c2);
 	}
 	
 }
